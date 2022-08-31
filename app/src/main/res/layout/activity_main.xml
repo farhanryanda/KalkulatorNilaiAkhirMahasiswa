@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_kalkulator_bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menghitung Nilai Akhir Mahasiswa"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="60dp"
+        android:text="Nama"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kalkulator_bmi" />
+
+    <EditText
+        android:id="@+id/edt_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:hint="Input Nama"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_nama"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kalkulator_bmi" />
+
+    <TextView
+        android:id="@+id/tv_nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="NIM"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_nama"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama" />
+
+    <EditText
+        android:id="@+id/edt_nim"
+        android:layout_width="wrap_content"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="Input NIM"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_nim"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nama" />
+
+    <TextView
+        android:id="@+id/tv_uas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="36dp"
+        android:text="Nilai UAS"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_nim"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nim" />
+
+    <EditText
+        android:id="@+id/edt_uas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Input UAS"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/edt_nim"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nim" />
+
+    <TextView
+        android:id="@+id/tv_uts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:text="Nilai UTS"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_uas"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_uas" />
+
+    <EditText
+        android:id="@+id/edt_uts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Input UTS"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/edt_uas"
+        app:layout_constraintTop_toBottomOf="@+id/edt_uas" />
+
+    <TextView
+        android:id="@+id/tv_tugas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:text="Nilai Tugas"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_uts"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_uts" />
+
+    <EditText
+        android:id="@+id/edt_tugas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Input nilai tugas"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/edt_uts"
+        app:layout_constraintTop_toBottomOf="@+id/edt_uts" />
+
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:text="Hitung"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_tugas" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:text="reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toEndOf="@+id/btn_calculate"
+        app:layout_constraintTop_toBottomOf="@+id/edt_tugas" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="RESULT"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_calculate"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
